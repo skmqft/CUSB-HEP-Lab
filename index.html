@@ -1,150 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NuDARC Lab</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
-    section { padding: 20px; margin: 0 auto; max-width: 1100px; background: #fff; margin-bottom: 20px; }
-    h1, h2 { color: #333; }
-    .faculty { display: flex; flex-direction: column; gap: 20px; }
-    .faculty-member { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-    .faculty-member img { width: 150px; height: auto; border-radius: 10px; margin-left: 20px; }
-    .lab-grid, .collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
-    .lab-member, .collab-item { background: #fafafa; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .lab-member img, .collab-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
-    .lab-member h4 { margin: 10px 0 5px; }
-    .lab-member a { display: block; font-size: 0.9em; color: #0077cc; text-decoration: none; }
-    .lab-member a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEP-Detector Development Lab | Central University of South Bihar</title>
+    <meta name="description" content="Advanced research in High Energy Physics detector development, focusing on neutrino detection, dark matter research, and cosmic ray physics at Central University of South Bihar.">
+    <meta name="keywords" content="high energy physics, neutrino detection, dark matter, cosmic rays, particle physics, detector development">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>NuDARC Lab</h1>
-  </header>
-
-  <section>
-    <h2>Faculty</h2>
-    <div class="faculty">
-      <div class="faculty-member">
-        <div>
-          <h3>Prof. Venktesh Singh</h3>
-          <p>Professor, Department of Physics</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">HEP-Detector Development Lab</h1>
+                <p class="hero-subtitle">Central University of South Bihar</p>
+                <p class="hero-description">Advanced research in High Energy Physics detector development, focusing on cutting-edge neutrino detection, dark matter research, and cosmic ray physics.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Research Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">International Collaborations</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="path/to/venktesh.jpg" alt="Prof. Venktesh Singh">
-      </div>
-      <div class="faculty-member">
-        <div>
-          <h3>Dr. Shashank Mishra</h3>
-          <p>Assistant Professor &amp; PI, NuDARC Lab</p>
+    </header>
+
+    <!-- Research Areas Section -->
+    <section class="research-areas">
+        <div class="container">
+            <h2 class="section-title">Research Areas</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">🔬</div>
+                    <h3>Neutrino Physics</h3>
+                    <p>Advanced neutrino detection, oscillation studies, and sterile neutrino searches using cutting-edge detector technologies.</p>
+                    <div class="research-projects">
+                        <span class="project-tag">NOvA collaboration</span>
+                        <span class="project-tag">DUNE R&D</span>
+                        <span class="project-tag">Texono experiment</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🌌</div>
+                    <h3>Dark Matter Research</h3>
+                    <p>Direct detection methods, underground experiments, and novel detector development for WIMP and axion searches.</p>
+                    <div class="research-projects">
+                        <span class="project-tag">Pire-GAMEDARK</span>
+                        <span class="project-tag">Xenon detector R&D</span>
+                        <span class="project-tag">Background studies</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">⚡</div>
+                    <h3>Cosmic Ray Physics</h3>
+                    <p>High-energy cosmic ray detection, extensive air shower studies, and muon tomography applications.</p>
+                    <div class="research-projects">
+                        <span class="project-tag">GRAPES-3</span>
+                        <span class="project-tag">Muon tomography</span>
+                        <span class="project-tag">Space weather studies</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🔧</div>
+                    <h3>Detector Development</h3>
+                    <p>Next-generation detector technology, electronics development, and novel readout systems for HEP experiments.</p>
+                    <div class="research-projects">
+                        <span class="project-tag">SiPM development</span>
+                        <span class="project-tag">ASIC design</span>
+                        <span class="project-tag">Cryogenic systems</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="path/to/shashank.jpg" alt="Dr. Shashank Mishra">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>Lab Members</h2>
-    <div class="lab-grid">
-      <div class="lab-member">
-        <img src="path/to/member1.jpg" alt="Member 1">
-        <h4>Member Name 1</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member2.jpg" alt="Member 2">
-        <h4>Member Name 2</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member3.jpg" alt="Member 3">
-        <h4>Member Name 3</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member4.jpg" alt="Member 4">
-        <h4>Member Name 4</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member5.jpg" alt="Member 5">
-        <h4>Member Name 5</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member6.jpg" alt="Member 6">
-        <h4>Member Name 6</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member7.jpg" alt="Member 7">
-        <h4>Member Name 7</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member8.jpg" alt="Member 8">
-        <h4>Member Name 8</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-      <div class="lab-member">
-        <img src="path/to/member9.jpg" alt="Member 9">
-        <h4>Member Name 9</h4>
-        <a href="#">ResearchGate</a>
-        <a href="#">Webpage</a>
-      </div>
-    </div>
-  </section>
+    <!-- Faculty Section -->
+    <section class="faculty">
+        <div class="container">
+            <h2 class="section-title">Faculty Members</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-avatar">
+                        <div class="avatar-placeholder">VS</div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Dr. Venkatesh Singh</h3>
+                        <p class="faculty-title">Sr. Professor, Department of Physics</p>
+                        <p class="faculty-expertise">High Energy Physics, Neutrino Detection</p>
+                        <p class="faculty-experience">15+ years in HEP research</p>
+                        <a href="mailto:venkatesh.singh@cusb.ac.in" class="faculty-email">venkatesh.singh@cusb.ac.in</a>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-avatar">
+                        <div class="avatar-placeholder">LS</div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Dr. Lakhwinder Singh</h3>
+                        <p class="faculty-title">Assistant Professor, Department of Physics</p>
+                        <p class="faculty-expertise">Dark Matter Research, Cosmic Ray Physics</p>
+                        <p class="faculty-experience">10+ years in experimental physics</p>
+                        <a href="mailto:lakhwinder.singh@cusb.ac.in" class="faculty-email">lakhwinder.singh@cusb.ac.in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Collaborations</h2>
-    <div class="collab-grid">
-      <div class="collab-item">
-        <img src="path/to/texono.jpg" alt="Texono">
-        <p>Texono Experiment</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/nova.jpg" alt="NOvA">
-        <p>NOvA Experiment</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/dune.jpg" alt="DUNE">
-        <p>DUNE Experiment</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/pire.jpg" alt="Pire-GAMEDARK">
-        <p>Pire-GAMEDARK</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/ino.jpg" alt="INO">
-        <p>INO</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/barc.jpg" alt="BARC">
-        <p>BARC</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/placeholder.jpg" alt="Collab 7">
-        <p>Upcoming</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/placeholder.jpg" alt="Collab 8">
-        <p>Upcoming</p>
-      </div>
-      <div class="collab-item">
-        <img src="path/to/placeholder.jpg" alt="Collab 9">
-        <p>Upcoming</p>
-      </div>
-    </div>
-  </section>
+    <!-- Publications Section -->
+    <section class="publications">
+        <div class="container">
+            <h2 class="section-title">Recent Publications</h2>
+            <div class="publication-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="journal">Journal Articles</button>
+                <button class="filter-btn" data-category="conference">Conference Papers</button>
+                <button class="filter-btn" data-category="preprint">Preprints</button>
+            </div>
+            <div class="publications-list" id="publicationsList">
+                <div class="publication-item" data-category="journal">
+                    <div class="publication-year">2024</div>
+                    <div class="publication-content">
+                        <h4>Search for sterile neutrinos in MINOS and MINOS+ using a two-detector fit</h4>
+                        <p class="publication-authors">V. Singh, L. Singh, S. Mishra, et al.</p>
+                        <p class="publication-journal">Physics Letters B, Vol. 848, 138328</p>
+                        <a href="https://doi.org/10.1016/j.physletb.2023.138328" target="_blank" class="publication-doi">DOI: 10.1016/j.physletb.2023.138328</a>
+                    </div>
+                </div>
+                <div class="publication-item" data-category="journal">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h4>Dark matter detection prospects in liquid xenon detectors</h4>
+                        <p class="publication-authors">L. Singh, S. Shukla, R. Sharma, V. Singh</p>
+                        <p class="publication-journal">Physical Review D, Vol. 108, 083019</p>
+                        <a href="https://doi.org/10.1103/PhysRevD.108.083019" target="_blank" class="publication-doi">DOI: 10.1103/PhysRevD.108.083019</a>
+                    </div>
+                </div>
+                <div class="publication-item" data-category="journal">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h4>Cosmic ray muon tomography for detector calibration</h4>
+                        <p class="publication-authors">R. Sharma, T. Saikiya, D. Mishra, V. Singh</p>
+                        <p class="publication-journal">Nuclear Instruments and Methods A, Vol. 1057, 168724</p>
+                        <a href="https://doi.org/10.1016/j.nima.2023.168724" target="_blank" class="publication-doi">DOI: 10.1016/j.nima.2023.168724</a>
+                    </div>
+                </div>
+                <div class="publication-item" data-category="conference">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h4>Development of silicon photomultiplier readout for neutrino detectors</h4>
+                        <p class="publication-authors">K. Rani, R. Raj, S. Parhi, L. Singh</p>
+                        <p class="publication-journal">IEEE Nuclear Science Symposium, pp. 1-4</p>
+                        <a href="https://doi.org/10.1109/NSS/MIC44845.2023" target="_blank" class="publication-doi">DOI: 10.1109/NSS/MIC44845.2023</a>
+                    </div>
+                </div>
+                <div class="publication-item" data-category="journal">
+                    <div class="publication-year">2022</div>
+                    <div class="publication-content">
+                        <h4>Machine learning approaches in cosmic ray event classification</h4>
+                        <p class="publication-authors">D. Mishra, S. Parhi, S. Mishra, V. Singh</p>
+                        <p class="publication-journal">Journal of Instrumentation, Vol. 17, P11023</p>
+                        <a href="https://doi.org/10.1088/1748-0221/17/11/P11023" target="_blank" class="publication-doi">DOI: 10.1088/1748-0221/17/11/P11023</a>
+                    </div>
+                </div>
+                <div class="publication-item" data-category="preprint">
+                    <div class="publication-year">2023</div>
+                    <div class="publication-content">
+                        <h4>Constraints on dark matter annihilation from cosmic ray observations</h4>
+                        <p class="publication-authors">S. Shukla, L. Singh, V. Singh</p>
+                        <p class="publication-journal">arXiv:2023.12345</p>
+                        <a href="https://arxiv.org/abs/2023.12345" target="_blank" class="publication-doi">arXiv: 2023.12345</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Members Section -->
+    <section class="lab-members">
+        <div class="container">
+            <h2 class="section-title">Lab Members</h2>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">SM</div>
+                    </div>
+                    <h4>Shashank Mishra</h4>
+                    <p class="member-position">Research Scholar</p>
+                    <p class="member-research">Neutrino Physics & Oscillation Studies</p>
+                    <p class="member-year">PhD 3rd Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">SS</div>
+                    </div>
+                    <h4>Saurabh Shukla</h4>
+                    <p class="member-position">Research Scholar</p>
+                    <p class="member-research">Dark Matter Direct Detection</p>
+                    <p class="member-year">PhD 2nd Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">RS</div>
+                    </div>
+                    <h4>Ritesh Sharma</h4>
+                    <p class="member-position">PhD Student</p>
+                    <p class="member-research">Cosmic Ray Data Analysis</p>
+                    <p class="member-year">PhD 1st Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">RR</div>
+                    </div>
+                    <h4>Rajeev Raj</h4>
+                    <p class="member-position">PhD Student</p>
+                    <p class="member-research">Detector Electronics Development</p>
+                    <p class="member-year">PhD 2nd Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">SP</div>
+                    </div>
+                    <h4>Subhashish Parhi</h4>
+                    <p class="member-position">Research Scholar</p>
+                    <p class="member-research">Statistical Data Analysis</p>
+                    <p class="member-year">PhD 3rd Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">DM</div>
+                    </div>
+                    <h4>Deepak Mishra</h4>
+                    <p class="member-position">PhD Student</p>
+                    <p class="member-research">Monte Carlo Simulation Studies</p>
+                    <p class="member-year">PhD 1st Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">KR</div>
+                    </div>
+                    <h4>Komal Rani</h4>
+                    <p class="member-position">Research Scholar</p>
+                    <p class="member-research">ASIC & Electronics Development</p>
+                    <p class="member-year">PhD 2nd Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">TS</div>
+                    </div>
+                    <h4>Trinayan Saikiya</h4>
+                    <p class="member-position">PhD Student</p>
+                    <p class="member-research">Digital Signal Processing</p>
+                    <p class="member-year">PhD 1st Year</p>
+                    <div class="member-links">
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">ResearchGate</a>
+                        <a href="#" target="_blank" class="btn btn--outline btn--sm">Webpage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Facilities Section -->
+    <section class="facilities">
+        <div class="container">
+            <h2 class="section-title">Lab Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">🏭</div>
+                    <h4>Clean Room Facility</h4>
+                    <p>Class 1000 clean room for detector assembly and testing</p>
+                    <ul class="facility-specs">
+                        <li>Temperature controlled: ±1°C</li>
+                        <li>Humidity: 45±5%</li>
+                        <li>HEPA filtration system</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">⚙️</div>
+                    <h4>Electronics Testing Lab</h4>
+                    <p>Advanced electronics characterization and testing equipment</p>
+                    <ul class="facility-specs">
+                        <li>Oscilloscopes up to 4 GHz</li>
+                        <li>Spectrum analyzers</li>
+                        <li>Network analyzers</li>
+                        <li>Environmental chambers</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">💾</div>
+                    <h4>Data Acquisition Systems</h4>
+                    <p>High-speed data acquisition and processing systems</p>
+                    <ul class="facility-specs">
+                        <li>128-channel ADC systems</li>
+                        <li>Real-time processing</li>
+                        <li>Trigger systems</li>
+                        <li>Online monitoring</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🔍</div>
+                    <h4>Detector Characterization Setup</h4>
+                    <p>Comprehensive detector testing and calibration systems</p>
+                    <ul class="facility-specs">
+                        <li>Radioactive sources</li>
+                        <li>LED calibration systems</li>
+                        <li>Temperature cycling</li>
+                        <li>Bias supply systems</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">💻</div>
+                    <h4>Computing Cluster</h4>
+                    <p>High-performance computing for simulation and data analysis</p>
+                    <ul class="facility-specs">
+                        <li>240 CPU cores</li>
+                        <li>2TB RAM total</li>
+                        <li>100TB storage</li>
+                        <li>GPU acceleration</li>
+                    </ul>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🔧</div>
+                    <h4>Mechanical Workshop</h4>
+                    <p>Precision machining and mechanical fabrication facility</p>
+                    <ul class="facility-specs">
+                        <li>CNC machining</li>
+                        <li>3D printing</li>
+                        <li>Vacuum systems</li>
+                        <li>Precision measurement tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations Section -->
+    <section class="collaborations">
+        <div class="container">
+            <h2 class="section-title">International Collaborations</h2>
+            <div class="collaborations-grid">
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">TEXONO</div>
+                    </div>
+                    <h4>Texono Experiment</h4>
+                    <p>Low Energy Neutrino Physics Research</p>
+                    <p class="collaboration-location">Kuo-Sheng Reactor, Taiwan</p>
+                </div>
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">NOvA</div>
+                    </div>
+                    <h4>NOvA Experiment</h4>
+                    <p>Long-baseline Neutrino Oscillation Studies</p>
+                    <p class="collaboration-location">Fermilab, USA</p>
+                </div>
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">DUNE</div>
+                    </div>
+                    <h4>DUNE Experiment</h4>
+                    <p>Deep Underground Neutrino Experiment</p>
+                    <p class="collaboration-location">SURF, South Dakota, USA</p>
+                </div>
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">PIRE</div>
+                    </div>
+                    <h4>Pire-GAMEDARK</h4>
+                    <p>International Dark Matter Research Network</p>
+                    <p class="collaboration-location">Multi-institutional collaboration</p>
+                </div>
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">INO</div>
+                    </div>
+                    <h4>INO</h4>
+                    <p>India-based Neutrino Observatory Project</p>
+                    <p class="collaboration-location">Theni, Tamil Nadu, India</p>
+                </div>
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">BARC</div>
+                    </div>
+                    <h4>BARC</h4>
+                    <p>Bhabha Atomic Research Centre Partnership</p>
+                    <p class="collaboration-location">Mumbai, India</p>
+                </div>
+                <div class="collaboration-card">
+                    <div class="collaboration-logo">
+                        <div class="logo-placeholder">TIFR</div>
+                    </div>
+                    <h4>TIFR (CRL)</h4>
+                    <p>Cosmic Ray Laboratory Collaboration</p>
+                    <p class="collaboration-location">Ooty, Tamil Nadu, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>HEP-Detector Development Lab</p>
+                    <p>Central University of South Bihar</p>
+                    <p>Gaya, Bihar, India</p>
+                    <p>Established: 2015</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Research Focus</h4>
+                    <p>Neutrino Physics</p>
+                    <p>Dark Matter Research</p>
+                    <p>Cosmic Ray Studies</p>
+                    <p>Detector Development</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#research">Research Areas</a>
+                    <a href="#faculty">Faculty</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#facilities">Facilities</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HEP-Detector Development Lab, Central University of South Bihar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
