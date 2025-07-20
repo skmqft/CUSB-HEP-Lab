@@ -1,192 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEP-Detector Development Lab | Central University of South Bihar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
-        .faculty, .members, .collaborations {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .card {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .card img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .links a {
-            display: block;
-            margin-top: 5px;
-            font-size: 0.9em;
-            color: #1a0dab;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>HEP-Detector Development Lab | Central University of South Bihar</h1>
-        <p>Neutrinos, Dark Matter and Cosmic Ray Research</p>
-    </header>
-
-    <section>
-        <h2>Faculty Members</h2>
-        <div class="faculty">
-            <div class="card">
-                <h3>Dr. Venkatesh Singh</h3>
-                <img src="venkateshS.jpg" alt="Dr. Venkatesh Singh">
-                <p>Sr. Professor, Department of Physics</p>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__brand">
+                <h3>HEP Lab</h3>
             </div>
-            <div class="card">
-                <h3>Dr. Lakhwinder Singh</h3>
-                <img src="lakhwinderS.jpg" alt="Dr. Lakhwinder Singh">
-                <p>Assistant Professor, Department of Physics</p>
-            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#research" class="nav__link">Research</a></li>
+                <li><a href="#faculty" class="nav__link">Faculty</a></li>
+                <li><a href="#members" class="nav__link">Members</a></li>
+                <li><a href="#collaborations" class="nav__link">Collaborations</a></li>
+            </ul>
         </div>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Lab Members</h2>
-        <div class="members">
-            <div class="card">
-                <img src="ShashankM.jpg" alt="Mr. Shashank Mishra">
-                <h4>Member 1</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="SaurabhS.jpg" alt="Saurabh Shukla">
-                <h4>Member 2</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="RiteshS.jpg" alt="Ritesh Sharma">
-                <h4>Member 3</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="RajeevR.jpg" alt="Rajeev Raj">
-                <h4>Member 4</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="SubhaShisP.jpg" alt="Subhashish Parhi">
-                <h4>Member 5</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="DeepakM.jpg" alt="Deepak Mishra">
-                <h4>Member 6</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="KomalR.jpg" alt="Komal Rani">
-                <h4>Member 7</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="TrinayanS.jpg" alt="Trinayan Saikiya">
-                <h4>Member 8</h4>
-                <div class="links">
-                    <a href="#">ResearchGate</a>
-                    <a href="#">Webpage</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__background"></div>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">HEP-Detector Development Lab</h1>
+                <p class="hero__subtitle">Central University of South Bihar</p>
+                <p class="hero__description">Advanced research in High Energy Physics detector development, focusing on cutting-edge neutrino detection, dark matter research, and cosmic ray physics.</p>
+                <div class="hero__badges">
+                    <span class="badge">Neutrino Physics</span>
+                    <span class="badge">Dark Matter Research</span>
+                    <span class="badge">Cosmic Ray Physics</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2>Collaborations</h2>
-        <div class="collaborations">
-            <div class="card">
-                <img src="texono.jpg" alt="Texono">
-                <h4>Texono Experiment</h4>
-            </div>
-            <div class="card">
-                <img src="nova.jpg" alt="NOvA">
-                <h4>NOvA Experiment</h4>
-            </div>
-            <div class="card">
-                <img src="dune.jpg" alt="DUNE">
-                <h4>DUNE Experiment</h4>
-            </div>
-            <div class="card">
-                <img src="pire.jpg" alt="Pire-GAMEDARK">
-                <h4>Pire-GAMEDARK</h4>
-            </div>
-            <div class="card">
-                <img src="ino.jpg" alt="INO">
-                <h4>INO</h4>
-            </div>
-            <div class="card">
-                <img src="barc.jpg" alt="BARC">
-                <h4>BARC</h4>
-            </div>
-            <div class="card">
-                <img src="CRL.jpg" alt="CRL">
-                <h4>TIFR (CRL)</h4>
-            </div>
-            <div class="card">
-                <img src="collab8.jpg" alt="Coming Soon">
-                <h4>Coming Soon</h4>
-            </div>
-            <div class="card">
-                <img src="collab9.jpg" alt="Coming Soon">
-                <h4>Coming Soon</h4>
+    <!-- Research Areas Section -->
+    <section id="research" class="section research">
+        <div class="container">
+            <h2 class="section__title">Research Areas</h2>
+            <p class="section__description">Our laboratory focuses on cutting-edge research in high energy physics, developing next-generation detector technologies for fundamental particle physics experiments.</p>
+            <div class="research__grid">
+                <div class="research__card fade-in">
+                    <div class="research__icon">⚛️</div>
+                    <h3>Neutrino Physics</h3>
+                    <p>Advanced neutrino detection and oscillation studies</p>
+                </div>
+                <div class="research__card fade-in">
+                    <div class="research__icon">🌌</div>
+                    <h3>Dark Matter Research</h3>
+                    <p>Direct and indirect dark matter detection methods</p>
+                </div>
+                <div class="research__card fade-in">
+                    <div class="research__icon">☄️</div>
+                    <h3>Cosmic Ray Physics</h3>
+                    <p>High-energy cosmic ray detection and analysis</p>
+                </div>
+                <div class="research__card fade-in">
+                    <div class="research__icon">🔬</div>
+                    <h3>Detector Development</h3>
+                    <p>Next-generation detector technology research</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="section faculty">
+        <div class="container">
+            <h2 class="section__title">Faculty Members</h2>
+            <div class="faculty__grid">
+                <div class="faculty__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍🔬</span>
+                    </div>
+                    <div class="card__body">
+                        <h3>Dr. Venkatesh Singh</h3>
+                        <p class="card__title">Sr. Professor, Department of Physics</p>
+                        <p class="card__expertise">High Energy Physics, Neutrino Detection</p>
+                        <div class="card__links">
+                            <a href="#" class="btn btn--outline btn--sm" target="_blank">Profile</a>
+                            <a href="#" class="btn btn--outline btn--sm" target="_blank">Publications</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="faculty__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍🔬</span>
+                    </div>
+                    <div class="card__body">
+                        <h3>Dr. Lakhwinder Singh</h3>
+                        <p class="card__title">Assistant Professor, Department of Physics</p>
+                        <p class="card__expertise">Dark Matter Research, Cosmic Ray Physics</p>
+                        <div class="card__links">
+                            <a href="#" class="btn btn--outline btn--sm" target="_blank">Profile</a>
+                            <a href="#" class="btn btn--outline btn--sm" target="_blank">Publications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Members Section -->
+    <section id="members" class="section members">
+        <div class="container">
+            <h2 class="section__title">Lab Members</h2>
+            <div class="members__grid">
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Shashank Mishra</h4>
+                        <p class="card__position">Research Scholar</p>
+                        <p class="card__research">Neutrino Physics</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Saurabh Shukla</h4>
+                        <p class="card__position">Research Scholar</p>
+                        <p class="card__research">Dark Matter Detection</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Ritesh Sharma</h4>
+                        <p class="card__position">PhD Student</p>
+                        <p class="card__research">Cosmic Ray Analysis</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Rajeev Raj</h4>
+                        <p class="card__position">PhD Student</p>
+                        <p class="card__research">Detector Development</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👩‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Subhashish Parhi</h4>
+                        <p class="card__position">Research Scholar</p>
+                        <p class="card__research">Data Analysis</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Deepak Mishra</h4>
+                        <p class="card__position">PhD Student</p>
+                        <p class="card__research">Simulation Studies</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👩‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Komal Rani</h4>
+                        <p class="card__position">Research Scholar</p>
+                        <p class="card__research">Electronics Development</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member__card card fade-in">
+                    <div class="card__image-placeholder">
+                        <span class="placeholder-icon">👨‍💻</span>
+                    </div>
+                    <div class="card__body">
+                        <h4>Trinayan Saikiya</h4>
+                        <p class="card__position">PhD Student</p>
+                        <p class="card__research">Signal Processing</p>
+                        <div class="card__links">
+                            <a href="#" class="link-button" target="_blank">ResearchGate</a>
+                            <a href="#" class="link-button" target="_blank">Webpage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations Section -->
+    <section id="collaborations" class="section collaborations">
+        <div class="container">
+            <h2 class="section__title">Research Collaborations</h2>
+            <p class="section__description">Our laboratory collaborates with leading international research institutions and experiments in high energy physics.</p>
+            <div class="collaborations__grid">
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">🔬</div>
+                    <h4>Texono Experiment</h4>
+                    <p>Low Energy Neutrino Physics</p>
+                </div>
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">⚡</div>
+                    <h4>NOvA Experiment</h4>
+                    <p>Long-baseline Neutrino Oscillations</p>
+                </div>
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">🌊</div>
+                    <h4>DUNE Experiment</h4>
+                    <p>Deep Underground Neutrino Experiment</p>
+                </div>
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">🌑</div>
+                    <h4>Pire-GAMEDARK</h4>
+                    <p>Dark Matter Research Collaboration</p>
+                </div>
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">🏔️</div>
+                    <h4>INO</h4>
+                    <p>India-based Neutrino Observatory</p>
+                </div>
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">⚛️</div>
+                    <h4>BARC</h4>
+                    <p>Bhabha Atomic Research Centre</p>
+                </div>
+                <div class="collaboration__card card fade-in">
+                    <div class="collaboration__icon">☄️</div>
+                    <h4>TIFR (CRL)</h4>
+                    <p>Cosmic Ray Laboratory</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>Contact Information</h4>
+                    <p>HEP-Detector Development Lab</p>
+                    <p>Department of Physics</p>
+                    <p>Central University of South Bihar</p>
+                    <p>Gaya, Bihar, India</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Research Areas</h4>
+                    <ul>
+                        <li>Neutrino Physics</li>
+                        <li>Dark Matter Research</li>
+                        <li>Cosmic Ray Physics</li>
+                        <li>Detector Development</li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">University Website</a></li>
+                        <li><a href="#" target="_blank">Physics Department</a></li>
+                        <li><a href="#" target="_blank">Research Portal</a></li>
+                        <li><a href="#" target="_blank">Publications</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 HEP-Detector Development Lab, Central University of South Bihar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
-
 </html>
