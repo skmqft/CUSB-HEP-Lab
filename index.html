@@ -3,27 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NuDARC Lab</title>
+  <title>HEP-Detector Development Lab | Central University of South Bihar</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
-    section { padding: 20px; margin: 0 auto; max-width: 1100px; background: #fff; margin-bottom: 20px; }
-    h1, h2 { color: #333; }
-    .faculty { display: flex; flex-direction: column; gap: 20px; }
-    .faculty-member { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-    .faculty-member img { width: 150px; height: auto; border-radius: 10px; margin-left: 20px; }
-    .lab-grid, .collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
-    .lab-member, .collab-item { background: #fafafa; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .lab-member img, .collab-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
-    .lab-member h4 { margin: 10px 0 5px; }
-    .lab-member a { display: block; font-size: 0.9em; color: #0077cc; text-decoration: none; }
-    .lab-member a:hover { text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .container {
+      width: 95%;
+      max-width: 960px;
+      margin: auto;
+      padding: 1em;
+      background: white;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3em;
+      margin-top: 2rem;
+    }
+    .profile {
+      margin-bottom: 1rem;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #003366;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: white;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+    .contact, .links {
+      margin-top: 1.5rem;
+    }
+    .photo {
+      width: 130px;
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    .download-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    @media screen and (max-width: 600px) {
+      .photo {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+      .container {
+        padding: 0.5em;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>NuDARC Lab</h1>
-  </header>
 
   <section>
     <h2>Faculty</h2>
