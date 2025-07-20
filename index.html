@@ -3,227 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HEP-Detector Development Lab | Central University of South Bihar</title>
+  <title>NuDARC Lab</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header, footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-    .container {
-      width: 95%;
-      max-width: 960px;
-      margin: auto;
-      padding: 1em;
-      background: white;
-      box-sizing: border-box;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0;
-    }
-    h2 {
-      border-bottom: 2px solid #003366;
-      padding-bottom: 0.3em;
-      margin-top: 2rem;
-    }
-    .faculty {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-    .faculty img {
-      width: 120px;
-      height: auto;
-      border-radius: 10px;
-      margin-left: auto;
-    }
-    .lab-members {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    .member {
-      text-align: center;
-      width: 140px;
-    }
-    .member img {
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .member a {
-      display: block;
-      color: #003366;
-      font-size: 0.85em;
-      margin-top: 5px;
-    }
-    .collaborations {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 1rem;
-    }
-    .collaborations div {
-      text-align: center;
-    }
-    .collaborations img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-    }
-    .section {
-      margin-top: 2rem;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    a {
-      color: #003366;
-      text-decoration: none;
-    }
-    .links a {
-      display: inline-block;
-      margin-right: 15px;
-      color: #003366;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: white;
-      margin-top: 4rem;
-      padding-bottom: 2rem;
-    }
-    @media screen and (max-width: 600px) {
-      .faculty {
-        flex-direction: column;
-        text-align: center;
-      }
-      .faculty img {
-        margin: 1rem 0 0 0;
-      }
-      .collaborations {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
+    section { padding: 20px; margin: 0 auto; max-width: 1100px; background: #fff; margin-bottom: 20px; }
+    h1, h2 { color: #333; }
+    .faculty { display: flex; flex-direction: column; gap: 20px; }
+    .faculty-member { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    .faculty-member img { width: 150px; height: auto; border-radius: 10px; margin-left: 20px; }
+    .lab-grid, .collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
+    .lab-member, .collab-item { background: #fafafa; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .lab-member img, .collab-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+    .lab-member h4 { margin: 10px 0 5px; }
+    .lab-member a { display: block; font-size: 0.9em; color: #0077cc; text-decoration: none; }
+    .lab-member a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
-    <h1>HEP-Detector Development Lab</h1>
-    <p>Department of Physics, School of Physical and Chemical Sciences<br>Central University of South Bihar</p>
+    <h1>NuDARC Lab</h1>
   </header>
 
-  <div class="container">
+  <section>
+    <h2>Faculty</h2>
     <div class="faculty">
-      <div>
-        <h2>Prof. Venktesh Singh</h2>
-        <p>Senior Professor<br>venktesh@cusb.ac.in / venkaz@yahoo.com</p>
-      </div>
-      <img src="venktesh.jpg" alt="Prof. Venktesh Singh">
-    </div>
-
-    <div class="faculty">
-      <div>
-        <h2>Dr. Lakhwinder Singh</h2>
-        <p>Assistant Professor<br>lakhwinder@cusb.ac.in</p>
-      </div>
-      <img src="lakhwinder.jpg" alt="Dr. Lakhwinder Singh">
-    </div>
-
-    <div class="section">
-      <h2>Welcome!</h2>
-      <p>Welcome to the homepage of the High Energy Physics - Detector Development Lab of Central University of South Bihar! Our lab focuses on Neutrino Physics, Dark Matter Detection, Cosmic Muons, and Detector Development for Particle Physics. This page highlights our research, publications, facilities, and team.</p>
-    </div>
-
-    <div class="section">
-      <h2>Lab Members</h2>
-      <div class="lab-members">
-        <!-- Example member -->
-        <div class="member">
-          <img src="shashank.jpg" alt="Shashank Mishra">
-          <p>Shashank Mishra</p>
-          <a href="https://www.researchgate.net/profile/Shashank-Mishra">ResearchGate</a>
-          <a href="#">Webpage</a>
+      <div class="faculty-member">
+        <div>
+          <h3>Prof. Venktesh Singh</h3>
+          <p>Professor, Department of Physics</p>
         </div>
-        <!-- Add other members similarly -->
+        <img src="path/to/venktesh.jpg" alt="Prof. Venktesh Singh">
+      </div>
+      <div class="faculty-member">
+        <div>
+          <h3>Dr. Shashank Mishra</h3>
+          <p>Assistant Professor &amp; PI, NuDARC Lab</p>
+        </div>
+        <img src="path/to/shashank.jpg" alt="Dr. Shashank Mishra">
       </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Selected Publications</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Journal</th>
-            <th>Year</th>
-            <th>DOI / PDF</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Enhancing Measurement Precision of Non-Degenerate Two-Photon Absorption</strong></td>
-            <td>arXiv Preprint</td>
-            <td>2025</td>
-            <td><a href="https://arxiv.org/abs/2506.07384" target="_blank">arXiv:2506.07384</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="section">
-      <h2>Collaborations</h2>
-      <div class="collaborations">
-        <div>
-          <img src="texono.png" alt="Texono">
-          <p>Texono Experiment</p>
-        </div>
-        <div>
-          <img src="nova.png" alt="NOvA">
-          <p>NOvA Experiment</p>
-        </div>
-        <div>
-          <img src="dune.png" alt="DUNE">
-          <p>DUNE Experiment</p>
-        </div>
-        <div>
-          <img src="gamedark.png" alt="GAMEDARK">
-          <p>Pire-GAMEDARK</p>
-        </div>
-        <div>
-          <img src="ino.png" alt="INO">
-          <p>INO</p>
-        </div>
-        <div>
-          <img src="barc.png" alt="BARC">
-          <p>BARC</p>
-        </div>
+  <section>
+    <h2>Lab Members</h2>
+    <div class="lab-grid">
+      <div class="lab-member">
+        <img src="path/to/member1.jpg" alt="Member 1">
+        <h4>Member Name 1</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member2.jpg" alt="Member 2">
+        <h4>Member Name 2</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member3.jpg" alt="Member 3">
+        <h4>Member Name 3</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member4.jpg" alt="Member 4">
+        <h4>Member Name 4</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member5.jpg" alt="Member 5">
+        <h4>Member Name 5</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member6.jpg" alt="Member 6">
+        <h4>Member Name 6</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member7.jpg" alt="Member 7">
+        <h4>Member Name 7</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member8.jpg" alt="Member 8">
+        <h4>Member Name 8</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
+      </div>
+      <div class="lab-member">
+        <img src="path/to/member9.jpg" alt="Member 9">
+        <h4>Member Name 9</h4>
+        <a href="#">ResearchGate</a>
+        <a href="#">Webpage</a>
       </div>
     </div>
+  </section>
 
-    <div class="links">
-      <a href="#">Google Scholar</a>
-      <a href="#">ResearchGate</a>
-      <a href="#">InspireHEP</a>
-      <a href="https://twitter.com/GauravS88876292" target="_blank">Twitter</a>
+  <section>
+    <h2>Collaborations</h2>
+    <div class="collab-grid">
+      <div class="collab-item">
+        <img src="path/to/texono.jpg" alt="Texono">
+        <p>Texono Experiment</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/nova.jpg" alt="NOvA">
+        <p>NOvA Experiment</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/dune.jpg" alt="DUNE">
+        <p>DUNE Experiment</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/pire.jpg" alt="Pire-GAMEDARK">
+        <p>Pire-GAMEDARK</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/ino.jpg" alt="INO">
+        <p>INO</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/barc.jpg" alt="BARC">
+        <p>BARC</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/placeholder.jpg" alt="Collab 7">
+        <p>Upcoming</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/placeholder.jpg" alt="Collab 8">
+        <p>Upcoming</p>
+      </div>
+      <div class="collab-item">
+        <img src="path/to/placeholder.jpg" alt="Collab 9">
+        <p>Upcoming</p>
+      </div>
     </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Shashank Mishra | HEP Detector Development Lab | Central University of South Bihar</p>
-  </footer>
+  </section>
 </body>
 </html>
